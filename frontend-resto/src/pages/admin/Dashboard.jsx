@@ -93,34 +93,7 @@ export default function Dashboard() {
 
       </div>
 
-      {/* OPTIONAL SECTION (bisa dikembangkan) */}
-      <div className="mt-8 grid md:grid-cols-2 gap-4">
-
-        <div className="bg-white p-5 rounded-xl shadow">
-          <h2 className="font-semibold mb-2">
-            🔥 Quick Insight
-          </h2>
-
-          <p className="text-gray-500 text-sm">
-            Dashboard ini bisa dikembangkan jadi realtime analytics,
-            grafik penjualan, dan laporan harian.
-          </p>
-        </div>
-
-        <div className="bg-white p-5 rounded-xl shadow">
-          <h2 className="font-semibold mb-2">
-            ⚡ Next Feature
-          </h2>
-
-          <ul className="text-sm text-gray-600 space-y-1">
-            <li>• Realtime order notification</li>
-            <li>• Chart revenue (Chart.js)</li>
-            <li>• Kitchen display system</li>
-            <li>• Export laporan PDF</li>
-          </ul>
-        </div>
-
-      </div>
+      
     </div>
   );
 }

@@ -9,29 +9,29 @@ export default function AdminLayout() {
   };
 
   return (
-    <div className="flex min-h-screen">
+    <div className="flex min-h-screen bg-gray-50">
 
-      <aside className="w-64 border-r p-4">
-        <h2 className="font-bold text-xl mb-4">
-          Admin Panel
-        </h2>
+      {/* SIDEBAR */}
+      <aside className="w-64 bg-white border-r p-5">
+        <h2 className="text-xl font-bold mb-6">🍽 Admin Panel</h2>
 
-        <ul className="space-y-2">
-          <li><Link to="/admin/dashboard">Dashboard</Link></li>
-          <li><Link to="/admin/orders">Orders</Link></li>
-          <li><Link to="/admin/menus">Menus</Link></li>
-          <li><Link to="/admin/reservations">Reservations</Link></li>
-        </ul>
+        <nav className="space-y-2 text-sm">
+          <Link className="block p-2 rounded hover:bg-gray-100" to="/admin/dashboard">Dashboard</Link>
+          <Link className="block p-2 rounded hover:bg-gray-100" to="/admin/orders">Orders</Link>
+          <Link className="block p-2 rounded hover:bg-gray-100" to="/admin/reservations">Reservations</Link>
+          <Link className="block p-2 rounded hover:bg-gray-100" to="/admin/menus">Menus</Link>
+        </nav>
 
         <button
           onClick={logout}
-          className="mt-6 text-red-500"
+          className="mt-6 w-full text-sm text-red-500 hover:bg-red-50 p-2 rounded"
         >
           Logout
         </button>
       </aside>
 
-      <main className="flex-1 p-5">
+      {/* CONTENT */}
+      <main className="flex-1 p-6">
         <Outlet />
       </main>
 
